@@ -175,13 +175,13 @@ function App() {
 
               <h1 id="hero-heading">
                 Digitala lösningar
-                <span>med rötterna på rätt plats.</span>
+                <span>som får företag att växa.</span>
               </h1>
 
               <p className="hero-lead">
-                Tallkoda utvecklar moderna, snabba och tillgängliga webbplatser
-                och webbapplikationer för företag som vill ha mer än bara en
-                snygg yta.
+                Tallkoda är ett webbutvecklingsföretag med rötter i Åhus. Vi
+                skapar moderna, snabba och tillgängliga webbplatser för företag
+                som vill ha en genomtänkt och professionell närvaro på webben.
               </p>
 
               <div className="hero-actions">
@@ -211,6 +211,7 @@ function App() {
               </ul>
             </div>
 
+            {/* Hero card removed
             <aside
               className="hero-card"
               aria-label="Tallkodas arbetssätt"
@@ -239,6 +240,7 @@ function App() {
                 <span />
               </div>
             </aside>
+            */}
           </div>
 
           <div className="hero-bottom-line" aria-hidden="true" />
@@ -254,7 +256,7 @@ function App() {
 
               <h2 id="intro-heading" className="section-title">
                 En hemsida ska inte bara finnas.
-                <span>Den ska göra sitt jobb.</span>
+                <span>Den ska fylla ett syfte.</span>
               </h2>
             </div>
 
@@ -301,29 +303,29 @@ function App() {
 
             <div className="services-grid">
               <article
-                className="service-card service-card-featured"
+                className="service-card"
                 data-reveal
               >
-                <p className="card-index">01</p>
+                <p className="card-index"></p>
 
                 <div>
                   <h3>Webbplatser</h3>
                   <p>
-                    Moderna, responsiva och genomtänkta webbplatser med fokus på
-                    varumärke, användarupplevelse, prestanda och konvertering.
+                    Moderna och genomtänkta webbplatser med fokus på varumärke
+                    och användarupplevelse.
                   </p>
                 </div>
 
                 <ul>
                   <li>Responsiv design</li>
-                  <li>SEO-vänlig struktur</li>
+                  <li>SEO-optimerad</li>
                   <li>Tillgänglighet</li>
                   <li>Prestanda</li>
                 </ul>
               </article>
 
               <article className="service-card" data-reveal>
-                <p className="card-index">02</p>
+                <p className="card-index"></p>
 
                 <div>
                   <h3>Webbapplikationer</h3>
@@ -334,14 +336,15 @@ function App() {
                 </div>
 
                 <ul>
-                  <li>React & TypeScript</li>
-                  <li>API-integrationer</li>
                   <li>Frontend & backend</li>
+                  <li>API-integrationer</li>
+                  <li>Databaser</li>
+                  <li></li>
                 </ul>
               </article>
 
               <article className="service-card" data-reveal>
-                <p className="card-index">03</p>
+                <p className="card-index"></p>
 
                 <div>
                   <h3>Vidareutveckling</h3>
@@ -355,6 +358,7 @@ function App() {
                   <li>Modernisering</li>
                   <li>WCAG</li>
                   <li>Optimering</li>
+                  <li></li>
                 </ul>
               </article>
             </div>
