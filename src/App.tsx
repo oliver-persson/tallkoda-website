@@ -1,30 +1,40 @@
 import { useEffect, useState } from "react";
+import ledacoImage from "./assets/ledaco-bokning.png";
+import emineImage from "./assets/emine.png";
+import tallkodaImage from "./assets/tallkoda.png";
 
 type Project = {
   title: string;
   description: string;
   tags: string[];
   href?: string;
+  image: string;
 };
 
 const projects: Project[] = [
   {
-    title: "Projekt ett",
+    title: "Ledaco Bokningssystem",
     description:
-      "Beskriv projektet kort här. Fokusera gärna på vilket problem som löstes, tekniken bakom och resultatet för kunden.",
-    tags: ["React", "TypeScript", "Tillgänglighet"],
+      "Nyutvecklad säljsida för Ledacos bokningssystem, byggd med fokus på tydlig presentation, responsiv design och en snabb användarupplevelse.",
+    tags: ["Astro", "Tailwind CSS"],
+    href: "https://bokning.ledaco.se/",
+    image: ledacoImage,
   },
   {
-    title: "Projekt två",
+    title: "E-mine",
     description:
-      "Här kan du presentera ytterligare ett kundprojekt, en webbapplikation eller ett projekt som visar din tekniska bredd.",
-    tags: ["Webbutveckling", "SEO", "Prestanda"],
+      "Vidareutveckling av E-mines webbplats i Webflow, genomförd i samarbete med E-mine och Hatten av Kommunikation, med fokus på struktur, innehåll och användarupplevelse.",
+    tags: ["Webflow"],
+    href: "https://www.emine.se/",
+    image: emineImage,
   },
   {
-    title: "Projekt tre",
+    title: "Tallkoda",
     description:
-      "En kort projektbeskrivning. Byt ut innehållet när du har bestämt vilka projekt du vill visa offentligt.",
-    tags: ["API", ".NET", "Responsiv design"],
+      "Nyutvecklad företagswebbplats för Tallkoda med fokus på varumärke, tillgänglighet, responsiv design och en modern användarupplevelse.",
+    tags: ["React", "TypeScript"],
+    href: "",
+    image: tallkodaImage,
   },
 ];
 
@@ -302,10 +312,7 @@ function App() {
             </div>
 
             <div className="services-grid">
-              <article
-                className="service-card"
-                data-reveal
-              >
+              <article className="service-card" data-reveal>
                 <p className="card-index"></p>
 
                 <div>
@@ -390,7 +397,7 @@ function App() {
 
               <div className="values-list">
                 <article data-reveal>
-                  <p>01</p>
+                  <p></p>
                   <div>
                     <h3>Tillgänglighet från början</h3>
                     <p>
@@ -401,7 +408,7 @@ function App() {
                 </article>
 
                 <article data-reveal>
-                  <p>02</p>
+                  <p></p>
                   <div>
                     <h3>Prestanda med mening</h3>
                     <p>
@@ -412,9 +419,9 @@ function App() {
                 </article>
 
                 <article data-reveal>
-                  <p>03</p>
+                  <p></p>
                   <div>
-                    <h3>Kod som går att leva med</h3>
+                    <h3>Kod byggd för att hålla</h3>
                     <p>
                       Tydlig struktur och hållbara lösningar gör fortsatt
                       utveckling enklare när verksamheten växer.
@@ -445,10 +452,15 @@ function App() {
               </p>
 
               <div className="tech-highlight">
+                <span>JavaScript</span>
                 <span>React</span>
+                <span>Vue</span>
+                <span>Angular</span>
                 <span>TypeScript</span>
                 <span>.NET</span>
+                <span>Wordpress</span>
                 <span>Webflow</span>
+                <span>Astro</span>
               </div>
             </div>
 
@@ -456,7 +468,7 @@ function App() {
               <details open>
                 <summary>
                   <span>
-                    <span className="accordion-number">01</span>
+                    <span className="accordion-number"></span>
                     Frontend
                   </span>
 
@@ -475,6 +487,8 @@ function App() {
                     <li>JavaScript</li>
                     <li>Vue</li>
                     <li>Angular</li>
+                    <li>WordPress</li>
+                    <li>Webflow</li>
                     <li>Astro</li>
                     <li>HTML5</li>
                     <li>CSS</li>
@@ -485,7 +499,7 @@ function App() {
               <details>
                 <summary>
                   <span>
-                    <span className="accordion-number">02</span>
+                    <span className="accordion-number"></span>
                     Backend & data
                   </span>
 
@@ -513,7 +527,7 @@ function App() {
               <details>
                 <summary>
                   <span>
-                    <span className="accordion-number">03</span>
+                    <span className="accordion-number"></span>
                     Kvalitet & tillgänglighet
                   </span>
 
@@ -541,7 +555,7 @@ function App() {
               <details>
                 <summary>
                   <span>
-                    <span className="accordion-number">04</span>
+                    <span className="accordion-number"></span>
                     Verktyg & arbetsflöde
                   </span>
 
@@ -558,9 +572,7 @@ function App() {
                     <li>Git</li>
                     <li>GitHub</li>
                     <li>Docker</li>
-                    <li>Webflow</li>
                     <li>Agilt</li>
-                    <li>CI/CD</li>
                   </ul>
                 </div>
               </details>
@@ -579,28 +591,29 @@ function App() {
                 <p className="eyebrow">Utvalda projekt</p>
 
                 <h2 id="projects-heading" className="section-title">
-                  Några saker vi har byggt.
+                  Projekt vi byggt eller arbetar med just nu.
                 </h2>
               </div>
 
               <p>
-                Här kan du senare lägga in kundprojekt, egna produkter och
-                webbapplikationer som visar vad Tallkoda kan göra.
+                Ett urval av webbplatser och digitala lösningar som Tallkoda har
+                utvecklat eller vidareutvecklat.
               </p>
             </div>
 
             <div className="projects-list">
-              {projects.map((project, index) => (
+              {projects.map((project) => (
                 <article
                   className="project-card"
                   key={project.title}
                   data-reveal
                 >
-                  <div
-                    className="project-visual"
-                    aria-label={`Bildyta för ${project.title}`}
-                  >
-                    <span>{String(index + 1).padStart(2, "0")}</span>
+                  <div className="project-visual">
+                    <img
+                      src={project.image}
+                      alt={`Skärmbild av ${project.title}`}
+                      loading="lazy"
+                    />
                   </div>
 
                   <div className="project-info">

@@ -562,7 +562,7 @@ button {
   font-size: 0.75rem;
 }
 
-.service-card div{
+.service-card div {
   min-height: 200px;
 }
 
@@ -822,6 +822,16 @@ details[open] .accordion-plus::after {
     var(--moss-300);
 }
 
+.project-visual img {
+  position: absolute;
+  inset: 14%;
+  width: 72%;
+  height: 72%;
+  object-fit: cover;
+  aspect-ratio: 16 / 10;
+  z-index: 1;
+}
+
 .project-card:nth-child(2) .project-visual {
   background:
     linear-gradient(25deg, transparent 0 50%, rgba(255, 255, 255, 0.16) 50%),
@@ -843,6 +853,7 @@ details[open] .accordion-plus::after {
 .project-visual::before {
   inset: 14%;
   border: 1px solid rgba(255, 255, 255, 0.45);
+  z-index: 2;
 }
 
 .project-visual::after {
@@ -851,15 +862,7 @@ details[open] .accordion-plus::after {
   left: 16%;
   height: 1px;
   background: rgba(255, 255, 255, 0.4);
-}
-
-.project-visual > span {
-  position: absolute;
-  right: 1.5rem;
-  bottom: 1rem;
-  color: rgba(255, 255, 255, 0.55);
-  font-size: 4rem;
-  font-weight: 500;
+  z-index: 0;
 }
 
 .project-info {
