@@ -15,7 +15,7 @@ const projects: Project[] = [
   {
     title: "Ledaco Bokningssystem",
     description:
-      "Nyutvecklad säljsida för Ledacos bokningssystem, byggd med fokus på tydlig presentation, responsiv design och en snabb användarupplevelse.",
+      "Säljsida för Ledacos digitala bokningssystem, framtagen för att presentera tjänsten tydligt och leda besökaren vidare till bokningslösningen.",
     tags: ["Astro", "Tailwind CSS"],
     href: "https://bokning.ledaco.se/",
     image: ledacoImage,
@@ -23,7 +23,7 @@ const projects: Project[] = [
   {
     title: "E-mine",
     description:
-      "Vidareutveckling av E-mines webbplats i Webflow, genomförd i samarbete med E-mine och Hatten av Kommunikation, med fokus på struktur, innehåll och användarupplevelse.",
+      "Vidareutveckling av E-mines webbplats i Webflow, genomförd i samarbete med E-mine och Hatten av Kommunikation. Arbetet omfattade nya sidor, innehållssektioner och löpande förbättringar av webbplatsen.",
     tags: ["Webflow"],
     href: "https://www.emine.se/",
     image: emineImage,
@@ -31,7 +31,7 @@ const projects: Project[] = [
   {
     title: "Tallkoda",
     description:
-      "Nyutvecklad företagswebbplats för Tallkoda med fokus på varumärke, tillgänglighet, responsiv design och en modern användarupplevelse.",
+      "Företagswebbplats för Tallkoda, utvecklad från grunden för att presentera företagets tjänster, kompetens och genomförda projekt i en sammanhållen digital profil.",
     tags: ["React", "TypeScript"],
     href: "",
     image: tallkodaImage,
@@ -666,36 +666,41 @@ function App() {
               </h2>
 
               <p className="about-lead">
-                Tallkoda AB är ett webbutvecklingsföretag i Åhus med fokus på
-                moderna och hållbara digitala lösningar.
+                Tallkoda AB är ett webbutvecklingsföretag i Åhus, strax utanför
+                Kristianstad, som hjälper företag och organisationer med moderna
+                webbplatser, webbapplikationer och digitala lösningar.
               </p>
 
               <p>
                 Bakom Tallkoda finns erfarenhet av både frontend- och
-                backendutveckling kombinerad med en bakgrund där analys,
-                kvalitet och problemlösning alltid har varit centralt.
+                backendutveckling, kombinerad med en analytisk bakgrund där
+                kvalitet, struktur och problemlösning alltid har varit centralt.
               </p>
 
               <p>
-                Det präglar hur vi utvecklar: förstå problemet först, välj
-                verktygen därefter och bygg något som faktiskt fungerar i
-                praktiken.
+                Det präglar hur vi arbetar: först förstå verksamheten och
+                användaren, därefter välja rätt teknik och bygga en lösning som
+                är snabb, tillgänglig och enkel att vidareutveckla.
               </p>
 
               <div className="about-statements">
                 <div>
-                  <strong>Åhus</strong>
-                  <span>Med bas i nordöstra Skåne</span>
+                  <strong>Nära samarbete</strong>
+                  <span>Direkt kontakt genom hela projektet</span>
                 </div>
 
                 <div>
-                  <strong>Fullstack</strong>
-                  <span>Frontend, backend och integration</span>
+                  <strong>Byggt för att hålla</strong>
+                  <span>
+                    Strukturerad kod och lösningar som kan utvecklas vidare
+                  </span>
                 </div>
 
                 <div>
-                  <strong>WCAG</strong>
-                  <span>Tillgänglighet som grundprincip</span>
+                  <strong>Helheten i fokus</strong>
+                  <span>
+                    Design, teknik, prestanda och tillgänglighet i samma lösning
+                  </span>
                 </div>
               </div>
             </div>
@@ -749,8 +754,8 @@ function App() {
                 <span>04</span>
                 <h3>Förfina</h3>
                 <p>
-                  Testning, tillgänglighet och prestanda är en del av leveransen
-                  – inte en eftertanke.
+                  Testning, tillgänglighet och prestanda är en del av
+                  leveransen, inte en eftertanke.
                 </p>
               </li>
             </ol>
@@ -827,7 +832,8 @@ function App() {
 
               <address>
                 <a href="mailto:kontakt@tallkoda.se">kontakt@tallkoda.se</a>
-                <span>Åhus, Skåne</span>
+                <span>Org.nr 559596-3157</span>
+                <span>Godkänd för F-skatt</span>
               </address>
             </div>
           </div>

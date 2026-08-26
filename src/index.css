@@ -1,6 +1,20 @@
 @import "tailwindcss";
 
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Manrope:wght@400;500;600&display=swap");
+@font-face {
+  font-family: "Manrope";
+  src: url("/fonts/Manrope-VariableFont_wght.woff2") format("woff2");
+  font-weight: 200 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("/fonts/DMSans-VariableFont_opsz,wght.woff2") format("woff2");
+  font-weight: 100 1000;
+  font-style: normal;
+  font-display: swap;
+}
 
 :root {
   --pine-950: #17221a;
@@ -115,7 +129,7 @@ button {
 .eyebrow {
   margin: 0 0 1.4rem;
   color: var(--pine-700);
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-weight: 600;
   letter-spacing: 0.16em;
   text-transform: uppercase;
@@ -193,7 +207,7 @@ button {
 .main-navigation > a {
   position: relative;
   color: var(--ink-soft);
-  font-size: 0.91rem;
+  font-size: 1em;
   font-weight: 500;
   text-decoration: none;
 }
@@ -313,7 +327,7 @@ button {
   gap: 1rem;
   padding: 0.8rem 1.4rem;
   border: 1px solid transparent;
-  font-size: 0.93rem;
+  font-size: 1rem;
   font-weight: 600;
   text-decoration: none;
   transition:
@@ -352,7 +366,7 @@ button {
 .text-link {
   width: fit-content;
   color: var(--ink);
-  font-size: 0.94rem;
+  font-size: 1rem;
   font-weight: 600;
   text-underline-offset: 0.32rem;
   text-decoration-thickness: 1px;
@@ -377,7 +391,7 @@ button {
   margin: 3rem 0 0;
   list-style: none;
   color: var(--ink-soft);
-  font-size: 0.92rem;
+  font-size: 1rem;
 }
 
 .hero-points li {
@@ -440,7 +454,7 @@ button {
 
 .hero-card-content > p:last-child {
   color: var(--ink-soft);
-  font-size: 0.93rem;
+  font-size: 1rem;
 }
 
 .tree-lines {
@@ -545,7 +559,6 @@ button {
 }
 
 .service-card {
-  min-height: 440px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -980,6 +993,7 @@ details[open] .accordion-plus::after {
 .about-lead {
   max-width: 620px;
   margin-top: 2rem;
+  margin-bottom: 1rem;
   color: var(--ink);
   font-size: 1.25rem;
 }
@@ -1047,7 +1061,7 @@ details[open] .accordion-plus::after {
 
 .process-list span {
   color: var(--moss-500);
-  font-size: 0.72rem;
+  font-size: 1rem;
 }
 
 .process-list h3 {
@@ -1060,7 +1074,7 @@ details[open] .accordion-plus::after {
 .process-list p {
   margin: 0;
   color: var(--ink-soft);
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 /* Contact */
@@ -1103,7 +1117,7 @@ details[open] .accordion-plus::after {
 .contact-note {
   margin: 1rem 0 0;
   color: #a9b4a8;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 /* Footer */
@@ -1122,7 +1136,7 @@ details[open] .accordion-plus::after {
 }
 
 .footer-logo {
-  width: 150px;
+  width: 200px;
   max-height: 90px;
   object-fit: contain;
   filter: brightness(0) invert(1);
@@ -1131,14 +1145,14 @@ details[open] .accordion-plus::after {
 .footer-brand p {
   margin-top: 1.5rem;
   color: #aeb8ad;
-  font-size: 0.88rem;
+  font-size: 1rem;
 }
 
 .footer-column h2 {
   margin: 0 0 1.3rem;
   color: var(--moss-300);
   font-family: var(--font-body);
-  font-size: 0.69rem;
+  font-size: 1rem;
   font-weight: 600;
   letter-spacing: 0.15em;
   text-transform: uppercase;
@@ -1154,7 +1168,7 @@ details[open] .accordion-plus::after {
 .footer-column a {
   width: fit-content;
   color: #d9ddd7;
-  font-size: 0.85rem;
+  font-size: 1rem;
   text-decoration: none;
 }
 
@@ -1181,7 +1195,7 @@ details[open] .accordion-plus::after {
 .footer-bottom a {
   margin: 0;
   color: #879286;
-  font-size: 0.72rem;
+  font-size: 0.82rem;
 }
 
 .footer-bottom div {
@@ -1306,7 +1320,7 @@ details[open] .accordion-plus::after {
   }
 
   .main-navigation > a {
-    padding: 0.95rem 0.4rem;
+    padding: 1rem 0.4rem;
   }
 
   .main-navigation .nav-cta {
@@ -1336,6 +1350,10 @@ details[open] .accordion-plus::after {
     gap: 1rem;
   }
 
+  .text-link {
+    margin-left: 1.4rem;
+  }
+
   .section-heading {
     grid-template-columns: 1fr;
     gap: 1.8rem;
@@ -1350,8 +1368,9 @@ details[open] .accordion-plus::after {
     grid-column: auto;
   }
 
-  .service-card {
-    min-height: 360px;
+  .service-card div {
+    min-height: auto;
+    padding-bottom: 1rem;
   }
 
   .values-list article {
