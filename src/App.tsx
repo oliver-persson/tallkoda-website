@@ -124,9 +124,10 @@ function App() {
             aria-label="Tallkoda – tillbaka till startsidan"
           >
             <img
-              src="/tallkoda-logo.png"
+              src="/tallkoda-logo-480.webp"
               alt="Tallkoda – webbutveckling"
               className="header-logo"
+              fetchPriority="high"
             />
           </a>
 
@@ -804,9 +805,10 @@ function App() {
           <div className="footer-main">
             <div className="footer-brand">
               <img
-                src="/tallkoda-logo.png"
+                src="/tallkoda-logo-480.webp"
                 alt="Tallkoda – webbutveckling"
                 className="footer-logo"
+                loading="lazy"
               />
 
               <p>
